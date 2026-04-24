@@ -203,10 +203,10 @@ export async function POST(req: NextRequest) {
     // 4. Send Response
     return NextResponse.json(
       {
-        user_id: process.env.USER_ID || "varunsinha_20122004",
-        email_id: process.env.EMAIL_ID || "varunsinha2604@gmail.com",
+        user_id: process.env.USER_ID,
+        email_id: process.env.EMAIL_ID,
         college_roll_number:
-          process.env.COLLEGE_ROLL_NUMBER || "RA2311027020072",
+          process.env.COLLEGE_ROLL_NUMBER,
         hierarchies,
         invalid_entries,
         duplicate_edges,
